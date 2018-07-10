@@ -1,0 +1,263 @@
+@wjs_ftColor:#80808c;
+.setSameHeight{
+  padding-bottom: 20px;
+}
+//顶部工具
+.wjs_top_tool{
+  .row{
+    border-bottom: 1px solid black;
+    text-align: center;
+    >div{
+      border-right: 1px solid black;
+      height: 39px;
+      line-height: 39px;
+      a{
+        color:@wjs_ftColor;
+      }
+    }
+    >div:last-child{
+      border-right: none;
+      .btn-danger{
+        color:#fff;
+        }
+      }
+    }
+  }
+.phone_tool{
+  position: relative;
+  img{
+    position: absolute;
+    top: 20px;
+    left: -3px;
+    display: none;
+    z-index: 2;
+  }
+  &:hover img{
+    display: block;
+  }
+}
+//轮播图
+.wjs_carousel{
+    img{
+      width: 100%;
+    }
+}
+//导航条
+#wjs_nav {
+  .navbar-default {
+    margin-bottom: 0;
+  }
+  .navbar-brand{
+    padding-top: 7px;
+    .wjsfont{
+      font-size: 70px;
+    }
+    .wjsfont-logo{
+      color:red;
+    }
+  }
+  a{
+    height: 80px;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 80px;
+  }
+}
+
+//交易支付保障
+.exchange {
+  padding: 40px 0 20px;
+  .row{
+    div{
+      margin-bottom: 20px;
+    }
+    a{
+      color:@wjs_ftColor;
+    }
+  }
+  .media-left{
+    .wjsfont{
+      font-size: 40px;
+    }
+}
+  .media-body{
+    h4{
+      font-size: 22px;
+    }
+  }
+}
+
+//正在排队
+.paidui{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 25px 0 ;
+  .pull-left{
+    a{
+      color:red;
+      border-bottom: 1px dashed red;
+    }
+  }
+  .pull-right{
+    a{
+      color:black;
+    }
+  }
+}
+
+//微投资
+.buy{
+  .nav-tabs>li{
+    margin-bottom: 0px;
+    padding: 0 15px;
+  }
+  .row>div{
+    padding-top: 10px;
+  }
+  .cart_defalut{
+    position: relative;
+    display: block;
+    padding-right: 80px;
+    background-color: #f7f7f7;
+    box-shadow: 1px 0px 9px 3px #ccc;
+    color:@wjs_ftColor;
+
+    h4{
+      padding-top: 30px;
+      text-align: center;
+    }
+    .cart_des{
+      padding: 0 10px;
+      .pull-left{
+        width: 50%;
+        >div{
+          padding: 5px 0;
+        }
+      }
+      .pull-right{
+        width: 50%;
+        >div{
+          padding: 5px 0;
+        }
+      }
+    }
+    .cart_main{
+      //background-color: red;
+      border-right: 1px dashed black;
+    }
+    .cart_right{
+      //background-color: pink;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 80px;
+      height: 100%;
+      text-align: center;
+      padding-top: 50px;
+      &:before{
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        position: absolute;
+        left: -10px;
+        top:-10px;
+        box-shadow: 0 1px 0 0 #ccc;
+      }
+      &:after{
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        position: absolute;
+        left: -10px;
+        bottom:-10px;
+        box-shadow: 0 -1px 0 0 #ccc;
+      }
+    }
+  }
+
+  .cart_exp{
+    background-color: red;
+    color:#fff;
+    .cart_main{
+      border-color: #fff;
+      position: relative;
+      .wjsfont{
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 40px;
+      }
+    }
+  }
+  .cart_pro{
+    .cart_right{
+      .tool_tip{
+        span:nth-of-type(1){
+           color:green;
+           border:1px solid green;
+         }
+        span:nth-of-type(2){
+          color:red;
+          border:1px solid red;
+        }
+      }
+    }
+  }
+}
+
+//新闻模块
+.wjs_news{
+  .news{
+    font-size: 30px;
+    border-bottom: 1px solid black;
+    position: relative;
+    &::after{
+      content: "";
+      width: 10px;
+      height: 10px;
+      bottom: -5px;
+      right: -10px;
+      position: absolute;
+      border: 1px solid black;
+      border-radius: 50%;
+    }
+  }
+  .wjs_news_title{
+    position: relative;
+    .line{
+      width: 0;
+      position: absolute;
+      top: 0;
+      left: 75px;
+      height: 400px;
+      border-left: 1px dashed #000;
+      z-index: -1;
+
+    }
+    ul{
+      list-style: none;
+      li{
+        margin-bottom: 50px;
+        a{
+          color:#fff;
+          background-color: #ccc;
+          display: inline-block;
+          border-radius: 50%;
+          padding: 10px;
+          &:hover,&:focus{
+            background-color: red;
+          }
+          .wjsfont{
+            font-size: 50px;
+          }
+        }
+      }
+     }
+    }
+  }
